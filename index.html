@@ -4,40 +4,52 @@
 <head>
     <title>Rust Raid Calculator</title>
     <meta charset="utf-8">
-     <title>Toggle Switches</title>
-     <link rel="stylesheet" href="toggle-switches.css">
+    <title>Toggle Switches</title>
+    <link rel="stylesheet" href="toggle-switches.css">
 </head>
 
 <body>
     <h1>What blueprints do you have</h1>
-     <h2>Rocket</h2>
-     <input type="checkbox" class="toggle-switch" checked id="Rocket">
-     <br>
-     <h2>C4</h2>
-     <input type="checkbox" class="toggle-switch" checked id="C4">
-     <br>
-     <h2>Satchel</h2>
-     <input type="checkbox" class="toggle-switch" checked id="Satchel">
-     <br>
-     <h2>Beancan</h2>
-     <input type="checkbox" class="toggle-switch" checked id="Beancan">
-     <br>
-     <h2>Explo</h2>
-     <input type="checkbox" class="toggle-switch" checked id="Explo"> 
-    
-     <button onclick="myFunction()">Try it</button>
+    <h2>Rocket</h2>
+    <input type="checkbox" class="toggle-switch" checked id="Rocket">
+    <br>
+    <h2>C4</h2>
+    <input type="checkbox" class="toggle-switch" checked id="C4">
+    <br>
+    <h2>Satchel</h2>
+    <input type="checkbox" class="toggle-switch" checked id="Satchel">
+    <br>
+    <h2>Beancan</h2>
+    <input type="checkbox" class="toggle-switch" checked id="Beancan">
+    <br>
+    <h2>Explo</h2>
+    <input type="checkbox" class="toggle-switch" checked id="Explo">
 
-     <p id="Rocket1"></p>
-    
-     <script>
-     function myFunction() {
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="textRocket"></p>
+    <p id="textC4"></p>
+    <p id="textSatchel"></p>
+    <p id="textBeancan"></p>
+    <p id="textExplo"></p>
+
+    <script>function myFunction() {
        var RocketToggle = document.getElementById("Rocket").checked;
-       document.getElementById("Rocket1").innerHTML = RocketToggle;
-       
-     
-  
-     }
-     </script>
+       document.getElementById("textRocket").innerHTML = RocketToggle;
+
+       var C4Toggle = document.getElementById("C4").checked;
+       document.getElementById("textC4").innerHTML = C4Toggle;
+
+       var SatchelToggle = document.getElementById("Satchel").checked;
+       document.getElementById("textSatchel").innerHTML = SatchelToggle;
+
+       var BeancanToggle = document.getElementById("Beancan").checked;
+       document.getElementById("textBeancan").innerHTML = BeancanToggle;
+
+       var ExploToggle = document.getElementById("Explo").checked;
+       document.getElementById("textExplo").innerHTML = ExploToggle;
+
+     }</script>
 </body>
 </html>
- 
+
