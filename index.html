@@ -25,7 +25,8 @@
     <h2>Explo</h2>
     <input type="checkbox" class="toggle-switch" checked id="Explo">
 
-    <button onclick="myFunction()">Try it</button>
+    <button onclick="getvar()">Try it</button>
+    <button onclick="calc()">calculate cost</button>
 
     <p id="textRocket"></p>
     <p id="textC4"></p>
@@ -34,7 +35,7 @@
     <p id="textExplo"></p>
 
     <script>
-        function myFunction() {
+        function getvar() {
             var RocketToggle = document.getElementById("Rocket").checked;
             document.getElementById("textRocket").innerHTML = RocketToggle;
 
@@ -50,6 +51,11 @@
             var ExploToggle = document.getElementById("Explo").checked;
             document.getElementById("textExplo").innerHTML = ExploToggle;
         }
+        
+        function calc(){
+            
+        }
+        
     </script>
 </body>
 </html>
