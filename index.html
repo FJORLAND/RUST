@@ -33,7 +33,9 @@
     <p id="textBeancan"></p>
     <p id="textExplo"></p>
     
-    <input id="SheetMetal" placeholder="Amount of SheetMetal doors">
+    <input id="SheetDoorInput" placeholder="Amount of SheetMetal doors">
+    <br>
+    <input id="GaragedoorInput" placeholder="Amount of Garage doors">
     <br>
     <button onclick="calc()">calculate cost</button>
 
@@ -56,8 +58,10 @@
         }
         
         function calc(){
-            var SheetMetalDoor = document.getElementById("SheetMetal").value; 
-            alert("amount of sheet metal doors is" + SheetMetalDoor);
+            var SheetMetalDoors = document.getElementById("SheetDoorInput").value; 
+            alert("amount of sheet metal doors is " + SheetMetalDoors);
+            
+            var GarageDoors = document.getElementById("GarageDoorInput").value;
         }
         
     </script>
