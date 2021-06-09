@@ -26,13 +26,16 @@
     <input type="checkbox" class="toggle-switch" checked id="Explo">
 
     <button onclick="getvar()">Check values</button>
-    <button onclick="calc()">calculate cost</button>
-
+    
     <p id="textRocket"></p>
     <p id="textC4"></p>
     <p id="textSatchel"></p>
     <p id="textBeancan"></p>
     <p id="textExplo"></p>
+    
+    <input id="SheetMetal" placeholder="Amount of SheetMetal doors">
+    <br>
+    <button onclick="calc()">calculate cost</button>
 
     <script>
         function getvar() {
@@ -53,7 +56,8 @@
         }
         
         function calc(){
-            
+            var SheetMetalDoor = document.getElementById("SheetMetal").value; 
+            alert("amount of sheet metal doors is" + SheetMetalDoor);
         }
         
     </script>
