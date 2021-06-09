@@ -11,30 +11,40 @@
 <body>
     <h1>What blueprints do you have</h1>
      <h2>Rocket</h2>
-     <input type="checkbox" class="toggle-switch" checked id="myCheck">
+     <input type="checkbox" class="toggle-switch" checked id="Rocket">
      <br>
      <h2>C4</h2>
-     <input type="checkbox" class="toggle-switch" checked>
+     <input type="checkbox" class="toggle-switch" checked id="C4">
      <br>
      <h2>Satchel</h2>
-     <input type="checkbox" class="toggle-switch" checked>
+     <input type="checkbox" class="toggle-switch" checked id="Satchel">
      <br>
      <h2>Beancan</h2>
-     <input type="checkbox" class="toggle-switch" checked>
+     <input type="checkbox" class="toggle-switch" checked id="Beancan">
      <br>
-     <h2>Explosive ammo</h2>
-     <input type="checkbox" class="toggle-switch" checked>
+     <h2>Explo</h2>
+     <input type="checkbox" class="toggle-switch" checked id="Explo"> 
     
      <button onclick="myFunction()">Try it</button>
 
-     <p id="demo"></p>
+     <p id="Rocket"></p>
+     <p id="C4"></p>
+     <p id="Satchel"></p>
+     <p id="Beancan"></p>
+     <p id="Explo"></p>
 
      <script>
      function myFunction() {
-       var x = document.getElementById("myCheck").checked;
-       document.getElementById("demo").innerHTML = x;
+       var RocketToggle = document.getElementById("Rocket").checked;
+       document.getElementById("Rocket").innerHTML = RocketToggle;
+       
+       var C4Toggle = document.getElementById("C4").checked;
+       document.getElementById("C4").innerHTML = C4Toggle;  
+         
+       var SatchelToggle = document.getElementById("Satchel").checked;
+       document.getElementById("Satchel").innerHTML = SatchelToggle;  
      }
-</script>
+     </script>
 </body>
 </html>
  
